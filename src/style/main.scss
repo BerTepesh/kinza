@@ -285,6 +285,7 @@ button {
 .preface {
   //height: 100vh;
   //min-height: 100vh;
+  overflow: hidden;
   margin-top: -147px;
   padding: 150px 0 60px;
   background-size: cover;
@@ -675,7 +676,7 @@ button {
       }
       &.prev {
         margin-left: -25%;
-        left: calc(50% - 75px);
+        left: calc(50% - 70px);
         @include bp($sm) {
           left: calc(50% - 110px);
         }
@@ -710,79 +711,81 @@ button {
       }
     }
   }
-}
-.slick-slide {
-  margin: 0 15px;
-  @include bp($md) {
-    margin: 0 25px;
-  }
-  @include bp($lg) {
-    margin: 0 30px;
-  }
-}
-.slick-list {
-  overflow: visible !important;
-  padding: 0 !important;
-  margin: 0 -200px !important;
-  @include bp($lg) {
-    margin: 0 -30px !important;
-  }
-}
-.slick-dots {
-  list-style: none;
-  padding-left: 0;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  li {
-    display: inline-block;
-    vertical-align: top;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #3b3b3b;
-    transition: background .3s;
-    margin: 0 5px;
-    cursor: pointer;
+  & .slick-slide {
+    margin: 0 15px;
     @include bp($md) {
-      width: 16px;
-      height: 16px;
-      margin: 0 12px;
+      margin: 0 25px;
     }
-    button {
-      display: none;
+    @include bp($lg) {
+      margin: 0 30px;
     }
-    &.slick-active {
-      background: #fff;
+  }
+  & .slick-list {
+    overflow: visible !important;
+    padding: 0 !important;
+    margin: 0 -200px !important;
+    @include bp($lg) {
+      margin: 0 -30px !important;
+    }
+  }
+  & .slick-dots {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #3b3b3b;
+      transition: background .3s;
+      margin: 0 5px;
+      cursor: pointer;
+      @include bp($md) {
+        width: 16px;
+        height: 16px;
+        margin: 0 12px;
+      }
+      button {
+        display: none;
+      }
+      &.slick-active {
+        background: #fff;
+      }
+    }
+  }
+  & .slick-slide {
+    transform: scale(.7);
+    transition: .3s ease-in-out all;
+    @include bp($sm) {
+      transform: scale(.6);
+    }
+    @include bp($xl) {
+      transform: scale(.5);
+    }
+  }
+  & .slick-slide.slick-center {
+    transform: scale(1.4);
+    z-index: 999;
+    position: relative;
+    @include bp($sm) {
+      transform: scale(1.5);
+    }
+    @include bp($xl) {
+      transform: scale(1.6);
     }
   }
 }
-.slick-slide {
-  transform: scale(.7);
-  transition: .3s ease-in-out all;
-  @include bp($sm) {
-    transform: scale(.6);
-  }
-  @include bp($xl) {
-    transform: scale(.5);
-  }
-}
-.slick-slide.slick-center {
-  transform: scale(1.4);
-  z-index: 999;
-  position: relative;
-  @include bp($sm) {
-    transform: scale(1.5);
-  }
-  @include bp($xl) {
-    transform: scale(1.6);
-  }
-}
+
 .afterparty {
   position: relative;
   padding: 50px 0 0;
+  overflow: hidden;
   @include bp($md) {
     padding: 100px 0 0;
   }
@@ -861,7 +864,7 @@ button {
       padding-right: 0;
     }
     &-holder {
-      margin-bottom: 105px;
+      margin-bottom: 70px;
       @include bp($md) {
         margin-bottom: 170px;
       }
@@ -910,6 +913,131 @@ button {
         max-width: 100%;
       }
 
+    }
+  }
+}
+.reviews {
+  position: relative;
+  padding-bottom: 100px;
+  h2 {
+    margin-bottom: 60px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, #212121 0%, rgba(20, 20, 20, 0) 100%);
+    z-index: -1;
+  }
+  &__img {
+    text-align: center;
+    margin-bottom: 110px;
+    display: none;
+    @include bp($lg) {
+      display: block;
+    }
+    img {
+      max-width: 1489px;
+      width: 100%;
+    }
+  }
+  &__add {
+    text-align: center;
+    &-holder {
+      display: inline-block;
+      vertical-align: top;
+      max-width: 1200px;
+      text-align: left;
+    }
+    b {
+      font-size: 18px;
+      line-height: 24px;
+      @include bp($md) {
+        font-size: 24px;
+        line-height: 28px;
+      }
+      @include bp($lg) {
+        font-size: 30px;
+        line-height: 36px;
+      }
+      span {
+        color: $c-red;
+      }
+    }
+    & .btn {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      @include bp($md) {
+        width: auto;
+        padding: 20px 70px;
+      }
+    }
+  }
+  &__slider {
+    display: block;
+    position: relative;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    @include bp($md) {
+      padding: 0 40px;
+    }
+    @include bp($lg) {
+      display: none;
+    }
+    img {
+      width: auto !important;
+      max-width: 100%;
+    }
+    & .slick-slide {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+  &__nav {
+    button {
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      margin: auto 0;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      @include bp($md) {
+        & .icon-arrow {
+          @include set-sprite($arrow);
+        }
+      }
+      &:hover .icon-arrow {
+        @include set-sprite($arrow-small-hover);
+        @include bp($md) {
+          @include set-sprite($arrow-hover);
+        }
+      }
+      &:focus {
+        outline: none;
+      }
+      &.prev {
+        left: -10px;
+        @include bp($md) {
+          left: -35px;
+        }
+      }
+      &.next {
+        right: -10px;
+        @include bp($md) {
+          right: -35px;
+        }
+        span {
+          transform: rotate(180deg);
+        }
+      }
     }
   }
 }

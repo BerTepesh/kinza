@@ -222,6 +222,38 @@
           </div>
         </div>
       </section>
+      <section class="reviews">
+        <div class="container">
+          <h2>Что говорят участники о <span>КИНЗЕ 2019</span></h2>
+          <div class="reviews__img">
+            <img src="img/reviews/0.jpg" alt="">
+          </div>
+          <div class="reviews__slider">
+            <div class="reviews__slider-holder">
+              <img src="img/reviews/1.jpg" alt="">
+              <img src="img/reviews/2.jpg" alt="">
+              <img src="img/reviews/3.jpg" alt="">
+              <img src="img/reviews/4.jpg" alt="">
+              <img src="img/reviews/5.jpg" alt="">
+              <img src="img/reviews/6.jpg" alt="">
+              <img src="img/reviews/7.jpg" alt="">
+            </div>
+            <div class="reviews__nav"></div>
+          </div>
+          <div class="reviews__add">
+            <div class="reviews__add-holder">
+              <div class="row text-center text-lg-left">
+                <div class="col mb-4 mb-lg-0">
+                  <b>Был на <span>КИНЗЕ 2019</span> и хочешь поделиться впечатлениями? <span>Жми на кнопку!</span></b>
+                </div>
+                <div class="col-lg-auto">
+                  <a href="##" class="btn">оставить отзыв</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
     
@@ -246,7 +278,15 @@
       centerMode: true,
       focusOnSelect: true
     });
-
+    $('.reviews__slider-holder').slick({
+      //infinite: true,
+      dots: false,
+      arrows: true,
+      prevArrow: '<button type="button" class="prev"><span class="icon-arrow"></span></button>',
+      nextArrow: '<button type="button" class="next"><span class="icon-arrow"></span></button>',
+      appendArrows: $('.reviews__slider .reviews__nav'),
+      adaptiveHeight: true
+    });
   </script>
 </body>
 </html>
