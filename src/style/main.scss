@@ -483,6 +483,7 @@ button {
     text-align: center;
     color: #fff;
     margin-bottom: 30px;
+    font-weight: normal;
     @include bp($md) {
       font-size: 30px;
       margin-bottom: 60px;
