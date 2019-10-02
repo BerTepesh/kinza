@@ -698,7 +698,8 @@ button {
 .afterparty {
   position: relative;
   padding: 50px 0 0;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: -40px; }
   @media (min-width: 768px) {
     .afterparty {
       padding: 100px 0 0; } }
@@ -769,7 +770,7 @@ button {
         padding-left: 0;
         padding-right: 0; } }
     .afterparty__cards-holder {
-      margin-bottom: 70px; }
+      margin-bottom: 115px; }
       @media (min-width: 768px) {
         .afterparty__cards-holder {
           margin-bottom: 170px; } }
@@ -817,7 +818,10 @@ button {
   position: relative;
   padding-bottom: 100px; }
   .reviews h2 {
-    margin-bottom: 60px; }
+    margin-bottom: 30px; }
+    @media (min-width: 768px) {
+      .reviews h2 {
+        margin-bottom: 60px; } }
   .reviews:before {
     content: '';
     position: absolute;
@@ -925,3 +929,46 @@ button {
           right: -35px; } }
       .reviews__nav button.next span {
         transform: rotate(180deg); }
+
+.video {
+  position: relative;
+  z-index: 1;
+  padding: 40px 0 30px; }
+  @media (min-width: 768px) {
+    .video {
+      padding: 100px 0 80px; } }
+  @media (min-width: 1280px) {
+    .video {
+      padding: 140px 0 100px; } }
+  .video:before {
+    content: '';
+    position: absolute;
+    height: 200px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(180deg, #111111 0%, rgba(20, 20, 20, 0) 100%); }
+  .video__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto 0;
+    z-index: -1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .video__back img {
+      max-width: 100%; }
+  .video__holder {
+    text-align: center;
+    position: relative; }
+    .video__holder img {
+      max-width: 100%; }
