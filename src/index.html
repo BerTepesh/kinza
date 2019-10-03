@@ -134,14 +134,16 @@
         <div class="dating__slider">
           <div class="dating__back"><img src="img/back.png" alt=""></div>
           <div class="slider">
-            <div class="slider__holder">
-              <div class="slider__item" style="background-image: url(img/slider/1.jpg)"></div>
-              <div class="slider__item" style="background-image: url(img/slider/2.jpg)"></div>
-              <div class="slider__item" style="background-image: url(img/slider/3.jpg)"></div>
-              <div class="slider__item" style="background-image: url(img/slider/1.jpg)"></div>
-              <div class="slider__item" style="background-image: url(img/slider/2.jpg)"></div>
+            <div class="slider__wrap">
+              <div class="slider__holder">
+                <div class="slider__item" style="background-image: url(img/slider/1.jpg)"></div>
+                <div class="slider__item" style="background-image: url(img/slider/2.jpg)"></div>
+                <div class="slider__item" style="background-image: url(img/slider/3.jpg)"></div>
+                <div class="slider__item" style="background-image: url(img/slider/1.jpg)"></div>
+                <div class="slider__item" style="background-image: url(img/slider/2.jpg)"></div>
+              </div>
+              <div class="slider__nav"></div>
             </div>
-            <div class="slider__nav"></div>
           </div>
         </div>
       </section>
@@ -237,14 +239,16 @@
           <h2>Лучшие моменты конференции <br> <span>КИНЗА 2019</span></h2>
         </div>
         <div class="slider">
-          <div class="slider__holder">
-            <div class="slider__item" style="background-image: url(img/slider/4.jpg)"></div>
-            <div class="slider__item" style="background-image: url(img/slider/5.jpg)"></div>
-            <div class="slider__item" style="background-image: url(img/slider/6.jpg)"></div>
-            <div class="slider__item" style="background-image: url(img/slider/4.jpg)"></div>
-            <div class="slider__item" style="background-image: url(img/slider/5.jpg)"></div>
+          <div class="slider__wrap">
+            <div class="slider__holder">
+              <div class="slider__item" style="background-image: url(img/slider/4.jpg)"></div>
+              <div class="slider__item" style="background-image: url(img/slider/5.jpg)"></div>
+              <div class="slider__item" style="background-image: url(img/slider/6.jpg)"></div>
+              <div class="slider__item" style="background-image: url(img/slider/4.jpg)"></div>
+              <div class="slider__item" style="background-image: url(img/slider/5.jpg)"></div>
+            </div>
+            <div class="slider__nav"></div>
           </div>
-          <div class="slider__nav"></div>
         </div>
       </section>
       <section class="moments moments_after">
@@ -252,14 +256,16 @@
           <h2>Лучшие моменты афтепати <br><span>КИНЗА 2019</span></h2>
         </div>
         <div class="slider">
-          <div class="slider__holder">
-            <div class="slider__item" style="background-image: url(img/slider/7.jpg)"></div>
-            <div class="slider__item" style="background-image: url(img/slider/8.jpg)"></div>
-            <div class="slider__item" style="background-image: url(img/slider/9.jpg)"></div>
-            <div class="slider__item" style="background-image: url(img/slider/7.jpg)"></div>
-            <div class="slider__item" style="background-image: url(img/slider/8.jpg)"></div>
+          <div class="slider__wrap">
+            <div class="slider__holder">
+              <div class="slider__item" style="background-image: url(img/slider/7.jpg)"></div>
+              <div class="slider__item" style="background-image: url(img/slider/8.jpg)"></div>
+              <div class="slider__item" style="background-image: url(img/slider/9.jpg)"></div>
+              <div class="slider__item" style="background-image: url(img/slider/7.jpg)"></div>
+              <div class="slider__item" style="background-image: url(img/slider/8.jpg)"></div>
+            </div>
+            <div class="slider__nav"></div>
           </div>
-          <div class="slider__nav"></div>
         </div>
       </section>
       <section class="registration">
@@ -342,13 +348,28 @@
                     </div>
                     <div id="panel2" class="tab-pane fade">
                       <form action="" class="reg-form w-100">
+                        <div class="row social align-items-center no-gutters">
+                          <div class="col">
+                            Войти <br>
+                            с помощью аккаунта <br>
+                            в соц. сети
+                          </div>
+                          <div class="col-auto">
+                            <ul>
+                              <li><a href="##"><span class="icon-fb"></span></a></li>
+                              <li><a href="##"><span class="icon-vk"></span></a></li>
+                              <li><a href="##"><span class="icon-google"></span></a></li>
+                            </ul>
+                          </div>
+                        </div>
                         <div class="form-control mt-4">
                           <input type="email" required placeholder="E-mail">
                         </div>
                         <div class="form-control mb-4">
                           <input type="password" required placeholder="Пароль">
                         </div>
-                        <button class="btn w-100">Войти</button>
+                        <button class="btn w-100 mb-2">Войти</button>
+                        <a href="##" class="reg-form__forget">Забыли пароль?</a>
                       </form>
                     </div>
                   </div>
@@ -402,8 +423,8 @@
                 <input type="password" required placeholder="Придумайте пароль">
               </div>
               <div class="custom-checkbox mb-4">
-                <input type="checkbox" id="agree" class="custom-control-input">
-                <label for="agree" class="custom-control-label"><a href="##">Я согласен с условиями политики конфиденциальности</a></label>
+                <input type="checkbox" id="agree2" class="custom-control-input">
+                <label for="agree2" class="custom-control-label"><a href="##">Я согласен с условиями политики конфиденциальности</a></label>
               </div>
               <button class="btn w-100">регистрация</button>
             </form>
@@ -420,13 +441,28 @@
           </div>
           <div class="modal-body">
             <form action="" class="reg-form w-100 pt-0">
+              <div class="row social align-items-center no-gutters">
+                <div class="col-sm mb-3 mb-sm-0">
+                  Войти <br>
+                  с помощью аккаунта <br>
+                  в соц. сети
+                </div>
+                <div class="col-auto">
+                  <ul>
+                    <li class="ml-0 ml-sm-2"><a href="##"><span class="icon-fb"></span></a></li>
+                    <li><a href="##"><span class="icon-vk"></span></a></li>
+                    <li><a href="##"><span class="icon-google"></span></a></li>
+                  </ul>
+                </div>
+              </div>
               <div class="form-control">
                 <input type="email" required placeholder="E-mail">
               </div>
               <div class="form-control mb-4">
                 <input type="password" required placeholder="Пароль">
               </div>
-              <button class="btn w-100">Войти</button>
+              <button class="btn w-100 mb-2">Войти</button>
+              <a href="##" class="reg-form__forget">Забыли пароль?</a>
             </form>
           </div>
         </div>

@@ -636,11 +636,17 @@ button {
 
 .slider {
   margin-bottom: 10px;
-  position: relative;
   text-align: center; }
   @media (min-width: 768px) {
     .slider {
       margin-bottom: 60px; } }
+  .slider__wrap {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 1700px;
+    overflow: hidden;
+    width: 100%;
+    position: relative; }
   .slider__holder {
     margin-bottom: 0;
     padding: 70px 0 80px; }
@@ -655,7 +661,7 @@ button {
         padding: 170px 0; } }
   .slider__item {
     min-height: 130px !important;
-    box-shadow: 10px 10px 61px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 0 20px 5px rgba(0, 0, 0, 0.75);
     background-size: cover;
     background-position: center center; }
     @media (min-width: 576px) {
@@ -931,7 +937,7 @@ button {
     text-align: center;
     margin-bottom: 110px;
     display: none; }
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
       .reviews__img {
         display: block; } }
     .reviews__img img {
@@ -973,7 +979,7 @@ button {
     @media (min-width: 768px) {
       .reviews__slider {
         padding: 0 40px; } }
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
       .reviews__slider {
         display: none; } }
     .reviews__slider img {
@@ -1164,6 +1170,10 @@ button {
   @media (min-width: 576px) {
     .reg-form {
       padding: 35px 50px 55px; } }
+  .reg-form__forget {
+    color: #adadad;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.7); }
 
 .social {
   font-weight: 300;
@@ -1264,61 +1274,58 @@ button {
 .modal-backdrop {
   background: rgba(2, 53, 86, 0.7); }
 
-.modal .close {
-  width: 25px;
-  height: 25px;
-  padding: 0;
-  position: absolute;
-  opacity: 1;
-  right: 13px;
-  top: -15px; }
-  @media (min-width: 576px) {
-    .modal .close {
-      right: -18px;
-      top: 15px; } }
-  .modal .close:focus {
-    outline: none; }
-  .modal .close:before, .modal .close:after {
-    position: absolute;
-    content: '';
-    height: 3px;
+.modal {
+  padding-right: 0 !important; }
+  .modal .close {
     width: 25px;
-    background: #fff;
-    left: 0;
-    top: 10px; }
-  .modal .close:before {
-    transform: rotate(45deg); }
-  .modal .close:after {
-    transform: rotate(-45deg); }
-  .modal .close span {
-    display: none; }
-
-.modal-header {
-  border-bottom: none;
-  background: #1f1f1f;
-  border-radius: 0;
-  padding: 25px 20px;
-  color: #fff;
-  font-weight: bold;
-  text-align: center; }
-  @media (min-width: 576px) {
-    .modal-header {
-      padding: 25px 50px; } }
-
-.modal-body {
-  padding: 0; }
-
-.modal-content {
-  border-radius: 0;
-  border: none;
-  box-shadow: 10px 10px 61px 5px rgba(0, 0, 0, 0.75); }
-
-.modal-footer {
-  border-top: none;
-  padding-bottom: 50px; }
-
-.modal .reg-form {
-  box-shadow: none; }
+    height: 25px;
+    padding: 0;
+    position: absolute;
+    opacity: 1;
+    right: 13px;
+    top: -15px; }
+    @media (min-width: 576px) {
+      .modal .close {
+        right: -18px;
+        top: 15px; } }
+    .modal .close:focus {
+      outline: none; }
+    .modal .close:before, .modal .close:after {
+      position: absolute;
+      content: '';
+      height: 3px;
+      width: 25px;
+      background: #fff;
+      left: 0;
+      top: 10px; }
+    .modal .close:before {
+      transform: rotate(45deg); }
+    .modal .close:after {
+      transform: rotate(-45deg); }
+    .modal .close span {
+      display: none; }
+  .modal-header {
+    border-bottom: none;
+    background: #1f1f1f;
+    border-radius: 0;
+    padding: 25px 20px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center; }
+    @media (min-width: 576px) {
+      .modal-header {
+        padding: 25px 50px; } }
+  .modal-body {
+    padding: 0; }
+  .modal-content {
+    border-radius: 0;
+    border: none;
+    box-shadow: 10px 10px 61px 5px rgba(0, 0, 0, 0.75); }
+  .modal-footer {
+    border-top: none;
+    padding-bottom: 50px; }
+  .modal .reg-form {
+    box-shadow: none; }
 
 .modal-content input[type="text"], .modal-content input[type="password"] {
   padding: 0px 30px 0px 30px !important; }
