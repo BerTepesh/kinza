@@ -1230,9 +1230,11 @@ button {
       margin: 0;
     }
     &-holder {
-      display: inline-block;
-      max-width: 450px;
       text-align: left;
+      @include bp($sm) {
+        display: inline-block;
+        max-width: 450px;
+      }
     }
   }
 }
@@ -1257,6 +1259,13 @@ button {
       display: inline-block;
       vertical-align: top;
       margin-left: 20px;
+    }
+  }
+  &_vertical ul {
+    li {
+      display: block;
+      margin-left: 0;
+      margin-bottom: 20px;
     }
   }
 }
@@ -1342,9 +1351,105 @@ button {
   }
 }
 .tab-content {
-  position: relative;
-  z-index: -1;
+
+}
+.subsribe {
+  padding: 70px 0;
+  &__holder {
+    overflow: hidden;
+    img {
+      min-width: 100%;
+    }
+  }
+
 }
 .footer {
+  padding: 20px 0 65px;
+  &__holder {
+    padding-right: 30px;
+    position: relative;
+  }
+  &__logo {
+    margin-bottom: 35px;
+  }
+  &__contract {
+    font-size: 12px;
+    line-height: 18px;
+    span {
+      color: #fff;
+      display: block;
+      margin-bottom: 5px;
+    }
+    a {
+      font-weight: 300;
+      color: #3cd5d5;
+    }
+  }
+  &__money {
+    a {
+      color: #fff;
+      font-size: 12px;
+      border-bottom: 1px solid rgba(153, 153, 153, .7);
+    }
+  }
+  &__email {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    li {
+      margin-bottom: 15px;
+    }
+    b {
+      font-weight: bold;
+      color: #fff;
+      font-size: 16px;
+      line-height: 18px;
+      display: block;
+      text-transform: uppercase;
+    }
+    a {
+      color: #44ffff;
+      font-size: 14px;
+      border-bottom: 1px solid rgba(68, 255, 255, .7);
+    }
+    span {
+      display: block;
+      color: $c-red;
+      font-weight: 500;
+      font-size: 14px;
+      @include bp($lg) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__tag {
+    font-size: 12px;
+    line-height: 18px;
+    &-ico {
+      line-height: 30px;
+      width: 34px;
+      text-align: center;
+      border: 2px solid;
+      border-radius: 50%;
+    }
+    span {
+      display: block;
+    }
+    a {
+      border-bottom: 1px solid rgba(153, 153, 153, .7);
+      color: #fff;
+    }
+  }
+  & .social {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    @include bp($xl) {
+      align-items: center;
+    }
 
+  }
 }

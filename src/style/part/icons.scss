@@ -32,3 +32,18 @@
 .icon-google {
   @include set-sprite($google);
 }
+.icon-ig {
+  @include set-sprite($ig);
+}
+.icon-tw {
+  @include set-sprite($tw);
+}
+.icon-logo {
+  @include set-sprite($logo);
+}
+.icon-binet {
+  @include set-sprite($binet);
+}
+.icon-card {
+  @include set-sprite($card);
+}

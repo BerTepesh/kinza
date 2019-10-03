@@ -6,32 +6,57 @@
 @media (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   [class^='icon-'], [class*=' icon-'] {
     background-image: url("../img/sprite@2x.png");
-    background-size: 142px 113px; } }
+    background-size: 223px 166px; } }
 
 .icon-arrow {
-  background-position: -27px -97px;
+  background-position: -85px -142px;
   width: 22px;
   height: 16px; }
 
 .icon-leaf {
-  background-position: -60px -54px;
+  background-position: -176px -88px;
   width: 33px;
   height: 32px; }
 
 .icon-fb {
-  background-position: -116px -60px;
+  background-position: -57px -142px;
   width: 23px;
   height: 23px; }
 
 .icon-vk {
-  background-position: -116px -31px;
+  background-position: 0px -142px;
   width: 24px;
   height: 24px; }
 
 .icon-google {
-  background-position: -116px 0px;
+  background-position: -178px -30px;
   width: 26px;
   height: 26px; }
+
+.icon-ig {
+  background-position: -29px -142px;
+  width: 23px;
+  height: 23px; }
+
+.icon-tw {
+  background-position: -155px -64px;
+  width: 24px;
+  height: 19px; }
+
+.icon-logo {
+  background-position: 0px 0px;
+  width: 223px;
+  height: 25px; }
+
+.icon-binet {
+  background-position: 0px -64px;
+  width: 150px;
+  height: 19px; }
+
+.icon-card {
+  background-position: 0px -30px;
+  width: 173px;
+  height: 29px; }
 
 @font-face {
   font-family: 'GothamPro';
@@ -179,7 +204,7 @@ button {
   opacity: 0;
   transition: all .3s ease;
   background: url("../img/sprite.png") -9999px -9999px no-repeat;
-  background-position: -54px -97px;
+  background-position: -209px -30px;
   width: 14px;
   height: 11px; }
 
@@ -655,19 +680,19 @@ button {
       .slider__nav button {
         bottom: 17px; }
         .slider__nav button .icon-arrow {
-          background-position: 0px -54px;
+          background-position: -116px -88px;
           width: 55px;
           height: 38px; } }
     @media (min-width: 1280px) {
       .slider__nav button {
         bottom: 160px; } }
     .slider__nav button:hover .icon-arrow {
-      background-position: 0px -97px;
+      background-position: -184px -64px;
       width: 22px;
       height: 16px; }
       @media (min-width: 768px) {
         .slider__nav button:hover .icon-arrow {
-          background-position: -56px 0px;
+          background-position: -56px -88px;
           width: 55px;
           height: 38px; } }
     .slider__nav button:focus {
@@ -974,16 +999,16 @@ button {
     cursor: pointer; }
     @media (min-width: 768px) {
       .reviews__nav button .icon-arrow {
-        background-position: 0px -54px;
+        background-position: -116px -88px;
         width: 55px;
         height: 38px; } }
     .reviews__nav button:hover .icon-arrow {
-      background-position: 0px -97px;
+      background-position: -184px -64px;
       width: 22px;
       height: 16px; }
       @media (min-width: 768px) {
         .reviews__nav button:hover .icon-arrow {
-          background-position: -56px 0px;
+          background-position: -56px -88px;
           width: 55px;
           height: 38px; } }
     .reviews__nav button:focus {
@@ -1116,7 +1141,7 @@ button {
           margin-bottom: 60px; } }
       @media (min-width: 768px) {
         .registration__features li .icon-leaf {
-          background-position: 0px 0px;
+          background-position: 0px -88px;
           width: 51px;
           height: 49px; } }
   .registration__form {
@@ -1126,9 +1151,11 @@ button {
       .registration__form {
         margin: 0; } }
     .registration__form-holder {
-      display: inline-block;
-      max-width: 450px;
       text-align: left; }
+      @media (min-width: 576px) {
+        .registration__form-holder {
+          display: inline-block;
+          max-width: 450px; } }
 
 .reg-form {
   background: #1f1f1f;
@@ -1151,6 +1178,10 @@ button {
       display: inline-block;
       vertical-align: top;
       margin-left: 20px; }
+  .social_vertical ul li {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 20px; }
 
 .form-control {
   padding: 0;
@@ -1223,6 +1254,83 @@ button {
           line-height: 70px;
           padding: 0 55px; } }
 
-.tab-content {
-  position: relative;
-  z-index: -1; }
+.subsribe {
+  padding: 70px 0; }
+  .subsribe__holder {
+    overflow: hidden; }
+    .subsribe__holder img {
+      min-width: 100%; }
+
+.footer {
+  padding: 20px 0 65px; }
+  .footer__holder {
+    padding-right: 30px;
+    position: relative; }
+  .footer__logo {
+    margin-bottom: 35px; }
+  .footer__contract {
+    font-size: 12px;
+    line-height: 18px; }
+    .footer__contract span {
+      color: #fff;
+      display: block;
+      margin-bottom: 5px; }
+    .footer__contract a {
+      font-weight: 300;
+      color: #3cd5d5; }
+  .footer__money a {
+    color: #fff;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.7); }
+  .footer__email {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0; }
+    .footer__email li {
+      margin-bottom: 15px; }
+    .footer__email b {
+      font-weight: bold;
+      color: #fff;
+      font-size: 16px;
+      line-height: 18px;
+      display: block;
+      text-transform: uppercase; }
+    .footer__email a {
+      color: #44ffff;
+      font-size: 14px;
+      border-bottom: 1px solid rgba(68, 255, 255, 0.7); }
+    .footer__email span {
+      display: block;
+      color: #ff4747;
+      font-weight: 500;
+      font-size: 14px; }
+      @media (min-width: 992px) {
+        .footer__email span {
+          font-size: 16px; } }
+  .footer__tag {
+    font-size: 12px;
+    line-height: 18px; }
+    .footer__tag-ico {
+      line-height: 30px;
+      width: 34px;
+      text-align: center;
+      border: 2px solid;
+      border-radius: 50%; }
+    .footer__tag span {
+      display: block; }
+    .footer__tag a {
+      border-bottom: 1px solid rgba(153, 153, 153, 0.7);
+      color: #fff; }
+  .footer .social {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+    @media (min-width: 1280px) {
+      .footer .social {
+        -ms-flex-align: center;
+            align-items: center; } }
