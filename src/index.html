@@ -367,6 +367,71 @@
       </section>
     </main>
     //= template/footer.html
+    <div class="modal fade" id="regmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+            Зарегистрироваться
+          </div>
+          <div class="modal-body">
+            <form action="" class="reg-form pt-0">
+              <div class="row social align-items-center no-gutters">
+                <div class="col-sm mb-3 mb-sm-0">
+                  Зарегистрируйтесь <br>
+                  с помощью аккаунта <br>
+                  в соц. сети
+                </div>
+                <div class="col-auto">
+                  <ul>
+                    <li class="ml-0 ml-sm-2"><a href="##"><span class="icon-fb"></span></a></li>
+                    <li><a href="##"><span class="icon-vk"></span></a></li>
+                    <li><a href="##"><span class="icon-google"></span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="phone-pick">
+                <div class="form-control required">
+                  <input type="tel" required placeholder="(___) ___-__-__">
+                </div>
+              </div>
+              <div class="form-control required">
+                <input type="email" required placeholder="E-mail">
+              </div>
+              <div class="form-control required mb-4">
+                <input type="password" required placeholder="Придумайте пароль">
+              </div>
+              <div class="custom-checkbox mb-4">
+                <input type="checkbox" id="agree" class="custom-control-input">
+                <label for="agree" class="custom-control-label"><a href="##">Я согласен с условиями политики конфиденциальности</a></label>
+              </div>
+              <button class="btn w-100">регистрация</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+            Войти
+          </div>
+          <div class="modal-body">
+            <form action="" class="reg-form w-100 pt-0">
+              <div class="form-control">
+                <input type="email" required placeholder="E-mail">
+              </div>
+              <div class="form-control mb-4">
+                <input type="password" required placeholder="Пароль">
+              </div>
+              <button class="btn w-100">Войти</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   //= template/scripts.html
   <script>

@@ -1201,7 +1201,7 @@ button {
   .form-control input {
     width: 100%;
     line-height: 50px;
-    padding: 0 30px;
+    padding: 0 30px !important;
     font-size: 16px;
     font-weight: 300;
     border: none; }
@@ -1215,12 +1215,12 @@ button {
   position: relative;
   font-size: 18px; }
   .phone-pick .form-control input {
-    padding-left: 40px !important; }
+    padding-left: 50px !important; }
   .phone-pick:before {
     content: '+7';
     position: absolute;
     font-weight: 300;
-    left: 15px;
+    left: 25px;
     top: 12px;
     display: block;
     font-size: 16px;
@@ -1260,6 +1260,68 @@ button {
     overflow: hidden; }
     .subsribe__holder img {
       min-width: 100%; }
+
+.modal-backdrop {
+  background: rgba(2, 53, 86, 0.7); }
+
+.modal .close {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  position: absolute;
+  opacity: 1;
+  right: 13px;
+  top: -15px; }
+  @media (min-width: 576px) {
+    .modal .close {
+      right: -18px;
+      top: 15px; } }
+  .modal .close:focus {
+    outline: none; }
+  .modal .close:before, .modal .close:after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    left: 0;
+    top: 10px; }
+  .modal .close:before {
+    transform: rotate(45deg); }
+  .modal .close:after {
+    transform: rotate(-45deg); }
+  .modal .close span {
+    display: none; }
+
+.modal-header {
+  border-bottom: none;
+  background: #1f1f1f;
+  border-radius: 0;
+  padding: 25px 20px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center; }
+  @media (min-width: 576px) {
+    .modal-header {
+      padding: 25px 50px; } }
+
+.modal-body {
+  padding: 0; }
+
+.modal-content {
+  border-radius: 0;
+  border: none;
+  box-shadow: 10px 10px 61px 5px rgba(0, 0, 0, 0.75); }
+
+.modal-footer {
+  border-top: none;
+  padding-bottom: 50px; }
+
+.modal .reg-form {
+  box-shadow: none; }
+
+.modal-content input[type="text"], .modal-content input[type="password"] {
+  padding: 0px 30px 0px 30px !important; }
 
 .footer {
   padding: 20px 0 65px; }
