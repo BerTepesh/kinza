@@ -1229,14 +1229,16 @@ button {
     @include bp($sm) {
       margin: 0;
     }
+    &-holder {
+      display: inline-block;
+      max-width: 450px;
+      text-align: left;
+    }
   }
 }
 .reg-form {
   background: #1f1f1f;
   padding: 35px 20px 55px;
-  display: inline-block;
-  max-width: 450px;
-  text-align: left;
   box-shadow: 10px 10px 61px 5px rgba(0,0,0,0.75);
   @include bp($sm) {
     padding: 35px 50px 55px;
@@ -1278,13 +1280,16 @@ button {
   }
   input {
     width: 100%;
-    line-height: 62px;
+    line-height: 50px;
     padding: 0 30px;
     font-size: 16px;
     font-weight: 300;
     border: none;
     &:focus {
       outline: none;
+    }
+    @include bp($sm) {
+      line-height: 62px;
     }
   }
 }
@@ -1299,12 +1304,46 @@ button {
     position: absolute;
     font-weight: 300;
     left: 15px;
-    top: 18px;
+    top: 12px;
     display: block;
     font-size: 16px;
     color: #5b5b5b;
     z-index: 2;
+    @include bp($sm) {
+      top: 18px;
+    }
   }
+}
+.nav-tabs {
+  border-bottom: none;
+  z-index: 2;
+  li {
+    text-align: center;
+    a {
+      line-height: 60px;
+      font-size: 14px;
+      font-weight: 900;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 0 30px;
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      background: #0d0d0d;
+      &.active {
+        background: #1f1f1f;
+      }
+      @include bp($sm) {
+        font-size: 18px;
+        line-height: 70px;
+        padding: 0 55px;
+      }
+    }
+  }
+}
+.tab-content {
+  position: relative;
+  z-index: -1;
 }
 .footer {
 
