@@ -5,3 +5,4 @@ $(document).ready(function() {
     return false;
   });
 });
+$('.phone-pick input').mask('(999) 999-99-99');

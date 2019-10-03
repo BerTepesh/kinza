@@ -20,3 +20,15 @@
 .icon-arrow {
 	@include set-sprite($arrow-small);
 }
+.icon-leaf {
+  @include set-sprite($leaf-small);
+}
+.icon-fb {
+  @include set-sprite($fb);
+}
+.icon-vk {
+  @include set-sprite($vk);
+}
+.icon-google {
+  @include set-sprite($google);
+}

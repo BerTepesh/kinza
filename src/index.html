@@ -232,22 +232,126 @@
           </div>
         </div>
       </section>
+      <section class="moments">
+        <div class="container">
+          <h2>Лучшие моменты конференции <br> <span>КИНЗА 2019</span></h2>
+        </div>
+        <div class="slider">
+          <div class="slider__holder">
+            <div class="slider__item" style="background-image: url(img/slider/4.jpg)"></div>
+            <div class="slider__item" style="background-image: url(img/slider/5.jpg)"></div>
+            <div class="slider__item" style="background-image: url(img/slider/6.jpg)"></div>
+            <div class="slider__item" style="background-image: url(img/slider/4.jpg)"></div>
+            <div class="slider__item" style="background-image: url(img/slider/5.jpg)"></div>
+          </div>
+          <div class="slider__nav"></div>
+        </div>
+      </section>
+      <section class="moments moments_after">
+        <div class="container">
+          <h2>Лучшие моменты афтепати <br><span>КИНЗА 2019</span></h2>
+        </div>
+        <div class="slider">
+          <div class="slider__holder">
+            <div class="slider__item" style="background-image: url(img/slider/7.jpg)"></div>
+            <div class="slider__item" style="background-image: url(img/slider/8.jpg)"></div>
+            <div class="slider__item" style="background-image: url(img/slider/9.jpg)"></div>
+            <div class="slider__item" style="background-image: url(img/slider/7.jpg)"></div>
+            <div class="slider__item" style="background-image: url(img/slider/8.jpg)"></div>
+          </div>
+          <div class="slider__nav"></div>
+        </div>
+      </section>
+      <section class="registration">
+        <div class="container">
+          <h2>Зарегистрируйтесь на <span>Кинзу 2020</span>, чтобы получить бесплатно:</h2>
+          <div class="row">
+            <div class="col">
+              <ul class="registration__features">
+                <li>
+                  <div class="row align-items-center no-gutters">
+                    <div class="col-auto"><span class="icon-leaf"></span></div>
+                    <div class="col pl-3 pl-md-4">Видео лучших докладов КИНЗЫ 2014-2019</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row align-items-center no-gutters">
+                    <div class="col-auto"><span class="icon-leaf"></span></div>
+                    <div class="col pl-3 pl-md-4">Презентации топовых докладов 2014-2019</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row align-items-center no-gutters">
+                    <div class="col-auto"><span class="icon-leaf"></span></div>
+                    <div class="col pl-3 pl-md-4">Скидки и бонусы от более чем 15 партнеров</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row align-items-center no-gutters">
+                    <div class="col-auto"><span class="icon-leaf"></span></div>
+                    <div class="col pl-3 pl-md-4">Участие в конкурсах с ценными призами</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-auto">
+              <div class="registration__form">
+                <form action="" class="reg-form">
+                  <div class="row social align-items-center no-gutters">
+                    <div class="col">
+                      Зарегистрируйтесь <br>
+                      с помощью аккаунта <br>
+                      в соц. сети
+                    </div>
+                    <div class="col-auto">
+                      <ul>
+                        <li><a href="##"><span class="icon-fb"></span></a></li>
+                        <li><a href="##"><span class="icon-vk"></span></a></li>
+                        <li><a href="##"><span class="icon-google"></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="phone-pick">
+                    <div class="form-control required">
+                      <input type="tel" required placeholder="(___) ___-__-__">
+                    </div>
+                  </div>
+                  <div class="form-control required">
+                    <input type="email" required placeholder="E-mail">
+                  </div>
+                  <div class="form-control required mb-4">
+                    <input type="password" required placeholder="Придумайте пароль">
+                  </div>
+                  <div class="custom-checkbox mb-4">
+                    <input type="checkbox" id="agree" class="custom-control-input">
+                    <label for="agree" class="custom-control-label"><a href="##">Я согласен с условиями политики конфиденциальности</a></label>
+                  </div>
+                  <button class="btn w-100">регистрация</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     //= template/footer.html
   </div>
   //= template/scripts.html
   <script>
-    $('.slider__holder').slick({
-      //infinite: true,
-      dots: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      arrows: true,
-      prevArrow: '<button type="button" class="prev"><span class="icon-arrow"></span></button>',
-      nextArrow: '<button type="button" class="next"><span class="icon-arrow"></span></button>',
-      appendArrows: $('.slider .slider__nav'),
-      centerMode: true,
-      focusOnSelect: true
+    $('.slider').each(function(){
+      var obj = $(this);
+      obj.find('.slider__holder').slick({
+        //infinite: true,
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: '<button type="button" class="prev"><span class="icon-arrow"></span></button>',
+        nextArrow: '<button type="button" class="next"><span class="icon-arrow"></span></button>',
+        appendArrows: $(obj.find('.slider__nav')),
+        centerMode: true,
+        focusOnSelect: true
+      });
     });
     $('.reviews__slider-holder').slick({
       //infinite: true,

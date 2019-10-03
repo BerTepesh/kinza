@@ -6,12 +6,32 @@
 @media (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   [class^='icon-'], [class*=' icon-'] {
     background-image: url("../img/sprite@2x.png");
-    background-size: 115px 59px; } }
+    background-size: 142px 113px; } }
 
 .icon-arrow {
-  background-position: -27px -43px;
+  background-position: -27px -97px;
   width: 22px;
   height: 16px; }
+
+.icon-leaf {
+  background-position: -60px -54px;
+  width: 33px;
+  height: 32px; }
+
+.icon-fb {
+  background-position: -116px -60px;
+  width: 23px;
+  height: 23px; }
+
+.icon-vk {
+  background-position: -116px -31px;
+  width: 24px;
+  height: 24px; }
+
+.icon-google {
+  background-position: -116px 0px;
+  width: 26px;
+  height: 26px; }
 
 @font-face {
   font-family: 'GothamPro';
@@ -99,11 +119,11 @@ button {
 
 :-ms-input-placeholder {
   opacity: 1 !important;
-  color: #fff !important; }
+  color: #5b5b5b !important; }
 
 ::placeholder {
   opacity: 1 !important;
-  color: #fff !important; }
+  color: #5b5b5b !important; }
 
 .btn {
   background: #ff4747;
@@ -122,6 +142,55 @@ button {
   @media (min-width: 768px) {
     .btn {
       font-size: 22px; } }
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none; }
+
+.custom-checkbox .custom-control-label {
+  position: relative;
+  padding-left: 38px;
+  cursor: pointer;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 300; }
+  .custom-checkbox .custom-control-label a {
+    border-bottom: 1px solid rgba(153, 153, 153, 0.7);
+    color: #adadad; }
+  .custom-checkbox .custom-control-label:focus {
+    outline: none; }
+
+.custom-checkbox .custom-control-label:before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  background: #353535;
+  left: 0;
+  top: -2px;
+  border-radius: 0; }
+
+.custom-checkbox .custom-control-label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  opacity: 0;
+  transition: all .3s ease;
+  background: url("../img/sprite.png") -9999px -9999px no-repeat;
+  background-position: -54px -97px;
+  width: 14px;
+  height: 11px; }
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background: #353535; }
+
+.custom-control-input:active ~ .custom-control-label::before {
+  background: #353535; }
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {
+  opacity: 1; }
 
 .wrap {
   min-width: 320px;
@@ -354,7 +423,7 @@ button {
     .preface__description span {
       font-weight: 300;
       position: relative;
-      font-size: 10px;
+      font-size: 14px;
       line-height: 12px;
       padding-top: 5px; }
       @media (min-width: 768px) {
@@ -542,7 +611,8 @@ button {
 
 .slider {
   margin-bottom: 10px;
-  position: relative; }
+  position: relative;
+  text-align: center; }
   @media (min-width: 768px) {
     .slider {
       margin-bottom: 60px; } }
@@ -585,19 +655,19 @@ button {
       .slider__nav button {
         bottom: 17px; }
         .slider__nav button .icon-arrow {
-          background-position: -60px 0px;
+          background-position: 0px -54px;
           width: 55px;
           height: 38px; } }
     @media (min-width: 1280px) {
       .slider__nav button {
         bottom: 160px; } }
     .slider__nav button:hover .icon-arrow {
-      background-position: 0px -43px;
+      background-position: 0px -97px;
       width: 22px;
       height: 16px; }
       @media (min-width: 768px) {
         .slider__nav button:hover .icon-arrow {
-          background-position: 0px 0px;
+          background-position: -56px 0px;
           width: 55px;
           height: 38px; } }
     .slider__nav button:focus {
@@ -836,7 +906,7 @@ button {
     text-align: center;
     margin-bottom: 110px;
     display: none; }
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
       .reviews__img {
         display: block; } }
     .reviews__img img {
@@ -878,7 +948,7 @@ button {
     @media (min-width: 768px) {
       .reviews__slider {
         padding: 0 40px; } }
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
       .reviews__slider {
         display: none; } }
     .reviews__slider img {
@@ -904,16 +974,16 @@ button {
     cursor: pointer; }
     @media (min-width: 768px) {
       .reviews__nav button .icon-arrow {
-        background-position: -60px 0px;
+        background-position: 0px -54px;
         width: 55px;
         height: 38px; } }
     .reviews__nav button:hover .icon-arrow {
-      background-position: 0px -43px;
+      background-position: 0px -97px;
       width: 22px;
       height: 16px; }
       @media (min-width: 768px) {
         .reviews__nav button:hover .icon-arrow {
-          background-position: 0px 0px;
+          background-position: -56px 0px;
           width: 55px;
           height: 38px; } }
     .reviews__nav button:focus {
@@ -973,3 +1043,151 @@ button {
     position: relative; }
     .video__holder img {
       max-width: 100%; }
+
+.moments {
+  padding: 30px 0 10px;
+  position: relative;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .moments {
+      padding: 50px 0 30px; } }
+  .moments:before {
+    content: '';
+    position: absolute;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, #212121 0%, rgba(20, 20, 20, 0) 100%);
+    z-index: -1; }
+  .moments_after {
+    padding: 50px 0 10px; }
+    @media (min-width: 768px) {
+      .moments_after {
+        padding: 100px 0 30px; } }
+    .moments_after:after {
+      content: '';
+      position: absolute;
+      height: 200px;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      background: linear-gradient(180deg, #111111 0%, rgba(20, 20, 20, 0) 100%); }
+  .moments h2 {
+    margin-bottom: -20px; }
+    @media (min-width: 768px) {
+      .moments h2 {
+        margin-bottom: 20px; } }
+
+.registration {
+  padding: 50px 0 10px;
+  position: relative; }
+  @media (min-width: 768px) {
+    .registration {
+      padding: 100px 0 30px; } }
+  .registration:after {
+    content: '';
+    position: absolute;
+    height: 200px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(180deg, #111111 0%, rgba(20, 20, 20, 0) 100%); }
+  .registration h2 {
+    margin-bottom: 30px; }
+    @media (min-width: 768px) {
+      .registration h2 {
+        margin-bottom: 70px; } }
+  .registration__features {
+    list-style: none;
+    padding-left: 0; }
+    .registration__features li {
+      font-weight: 500;
+      color: #fff;
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 30px; }
+      @media (min-width: 768px) {
+        .registration__features li {
+          font-size: 24px;
+          line-height: 30px;
+          margin-bottom: 60px; } }
+      @media (min-width: 768px) {
+        .registration__features li .icon-leaf {
+          background-position: 0px 0px;
+          width: 51px;
+          height: 49px; } }
+  .registration__form {
+    text-align: center;
+    margin: 0 -22px; }
+    @media (min-width: 576px) {
+      .registration__form {
+        margin: 0; } }
+
+.reg-form {
+  background: #1f1f1f;
+  padding: 35px 20px 55px;
+  display: inline-block;
+  max-width: 450px;
+  text-align: left;
+  box-shadow: 10px 10px 61px 5px rgba(0, 0, 0, 0.75); }
+  @media (min-width: 576px) {
+    .reg-form {
+      padding: 35px 50px 55px; } }
+
+.social {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 30px; }
+  .social ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0; }
+    .social ul li {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 20px; }
+
+.form-control {
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  margin-bottom: 7px;
+  position: relative; }
+  .form-control.required:after {
+    content: '*';
+    font-size: 16px;
+    color: #e06c5a;
+    position: absolute;
+    right: -10px;
+    top: 3px;
+    line-height: 15px; }
+  .form-control input {
+    width: 100%;
+    line-height: 62px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 300;
+    border: none; }
+    .form-control input:focus {
+      outline: none; }
+
+.phone-pick {
+  position: relative;
+  font-size: 18px; }
+  .phone-pick .form-control input {
+    padding-left: 40px !important; }
+  .phone-pick:before {
+    content: '+7';
+    position: absolute;
+    font-weight: 300;
+    left: 15px;
+    top: 18px;
+    display: block;
+    font-size: 16px;
+    color: #5b5b5b;
+    z-index: 2; }
